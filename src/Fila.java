@@ -53,6 +53,12 @@ public class Fila {
     }
 
     public void print() {
+        if (pilhaPrincipal.isEmpty()) {
+            System.out.println("Pilha Vazia");
+
+            return;
+        }
+
         while (!pilhaPrincipal.isEmpty()) {
             pilhaAuxiliar.push(pilhaPrincipal.pop());
         }
@@ -62,7 +68,6 @@ public class Fila {
             System.out.println(temp);
             pilhaPrincipal.push(temp);
         }
-
     }
 
     public boolean isEmpty() {

@@ -1,7 +1,6 @@
 public class Main {
 
     public static void main(String[] args) {
-
         Fila fila = new Fila();
 
         fila.queue(73);
@@ -17,7 +16,6 @@ public class Main {
         System.out.println(fila.dequeue());
 
         System.out.println(fila.isEmpty());
-
     }
 
 }
